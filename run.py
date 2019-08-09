@@ -1,14 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
     items = ["Apple", "Pear", "Banana"]
-    output = ""
-    for item in items:
-        output += "<h3>" + item + "</h3>"
 
-    return output
+    return render_template("index.html")
 
 @app.route("/profile")
 def name():
