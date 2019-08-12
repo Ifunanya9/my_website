@@ -1,18 +1,9 @@
-.important{
-    color:purple;
+.navigation{
+    list-style-type: none;
 }
-.good{
-    color:mediumpurple;
-}
-h1{
-    color:plum;
-}
-h2{
-    color:plum;
-}
-h3{
-    color:plum;
-}
-html{
-    background-color:lavender;
+
+.navigation-item{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
