@@ -5,9 +5,9 @@ app = Flask(__name__)
 def hello():
     items = ["Apple", "Pear", "Banana"]
 
-    return render_template("index.html")
+    return render_template("start.html", name="Ifunanyachi Kanu", items=items)
 
 @app.route("/profile")
 def name():
-    paragraph = "<p>My name is Ifunanyachi</p>"
-    return "My profile" + paragraph
+    paragraph = "<h4>My name is Ifunanyachi</h4>"
+    return "<h1>My profile</h1>" + paragraph

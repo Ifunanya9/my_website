@@ -5,6 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>This is start.html</h1>
+    <h1>{{name}}</h1>
+    <h1>
+        {% for item in items %}
+            <p>{{item}}</p>
+        {% endfor %}
+    </h1>
 </body>
 </html>
