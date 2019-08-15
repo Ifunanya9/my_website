@@ -1,6 +1,28 @@
 {% extends "layouts/main.html" %}
 {% block content %}
+    <p>{{person[0]}} {{person[1]}}</p>
     {% for item in items %}
-        <p>{{item}}</p>
+        <p>{{item.name}} ({{item.amount}} needed)</p>
     {% endfor %}
+    <div class="row">
+        <div class="six columns">
+            <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Heading Col 1</th>
+                    <th>Heading Col 2</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>fouyft</td>
+                <td>deeeeeeeeerrrrrrrfgfn</td>
+            </tr>
+            <tr>
+                <td>her the</td>
+                <td>for me</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
 {% endblock %}
