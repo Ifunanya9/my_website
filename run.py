@@ -45,7 +45,7 @@ def test():
 def currency():
     currency1 = request.args.get("currency1")
     currency2 = request.args.get("currency2")
-    rate = float(request.args.get("rate"))
+    rate = request.args.get("rate")
 
     table1 = []
     for x in range(1, 50):
@@ -54,4 +54,5 @@ def currency():
     return render_template("currency.html",
                            currency1=currency1,
                            currency2=currency2,
-                           rate=rate)
+                           rate=float(rate),
+                           table1=table1)
