@@ -1,0 +1,30 @@
+{% extends "layouts/main.html" %}
+{% block content %}
+
+    <form method="get">
+        <label for="currency1">Currency 1:</label>
+        <input type="text" name="currency1" value="{{currency1}}" id="currency1">
+        <label for="currency2">Currency 2:</label>
+        <input type="text" name="currency2" value="{{currency2}}" id="currency2">
+        <label for="rate">Exchange Rates:</label>
+        <input type="text" name="rate" value="{{rate}}" id="rate">
+        <br/>
+        <input type="submit" value="Send">
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>{{currency1}}</th>
+            <th>{{currency2}}</th>
+        </tr>
+
+        </thead>
+        <tbody>
+            <tr></tr>
+            <tr></tr>
+
+        </tbody>
+
+    </table>
+{% endblock %}

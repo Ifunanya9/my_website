@@ -40,3 +40,18 @@ def test():
     name = args.get("name")
     age = args.get("age")
     return render_template("test.html", name=name, age=age)
+
+@app.route("/currency")
+def currency():
+    currency1 = request.args.get("currency1")
+    currency2 = request.args.get("currency2")
+    rate = float(request.args.get("rate"))
+
+    table1 = []
+    for x in range(1, 50):
+        table1.append((x, x*rate))
+
+    return render_template("currency.html",
+                           currency1=currency1,
+                           currency2=currency2,
+                           rate=rate)

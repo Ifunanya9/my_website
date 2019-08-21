@@ -5,7 +5,7 @@
             <h1>My name is: {{name}}</h1>
             <h2>I am {{age}} years old</h2>
         {% endif %}
-    {% endif %}
+{% endif %}
     <form method="get">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" value="{% if name != None: %}{{name}}{% endif %}">
